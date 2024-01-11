@@ -87,7 +87,7 @@ const createElementsForText = ({title, date, description})=>{
     <p>${date}</p>
     <p>${description}</p>
     <div class="buttoned">
-    <button class="${title} btns" onclick="deleteElement(this)" type="submit">Delete<button><button class="btns" onclick="editElement(this)">Edit</button>
+    <button class="btns" onclick="deleteElement(this)" type="submit">Delete<button><button class="btns" onclick="editElement(this)">Edit</button>
     </div>
     </div>`;
     main.innerHTML += mainString;
@@ -127,7 +127,7 @@ modalForm.onsubmit = e =>{
         textDate.value,
         textDescription.value
     )
-    dialogText.close()
+    dialogText.close();
     createElementsForText(newNotes)
     dialogText.close()
     textDate.value = '';
