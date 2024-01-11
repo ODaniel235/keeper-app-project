@@ -159,11 +159,18 @@ textarea{
 textarea:focus{
     outline-color: gold;
 }
+button{
+    background-color: white;
+    border: none;
+}
 
 @media (max-width: 410px){
     dialog{
         left: -10%;
         position: relative;
+    }
+    #secondDialogText{
+        left: -20%;
     }
 }
 
@@ -172,5 +179,4 @@ textarea:focus{
         left: 10%;
         position: relative;
     }
-}
 }
