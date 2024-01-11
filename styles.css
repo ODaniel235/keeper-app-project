@@ -173,10 +173,4 @@ textarea:focus{
         position: relative;
     }
 }
-
-@media (max-width: 1420px){
-    dialog{
-        left: 30%;
-        position: relative;
-    }
 }
