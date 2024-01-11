@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Keeper App</title>
+</head>
+<body>
+    <header >
+        <p>Keeper App</p>
+    </header>
+    <div class="btnContainer">
+                <button id="addItems">Add Note</button>
+    </div>
+    <main>
+        <div class="note">
+            <h3>
+                &copy;Oluwadamilare Daniel Omole
+            </h3>
+            <p>
+                <a href="http://www.wa.me/+234814709885">Whatsapp</a>
+                <div class="buttoned" style="justify-content: center; align-items: center; background-color: white;">
+                    <button class="btns" onclick="deleteElement(this)">Delete</button>
+                </div>
+            </p>
+        </div>
+                <dialog id="dialogText">
+            <form id="modalForm">
+                <label for="inputText">Title</label>
+                <br>
+                <input type="text" name="text" id="inputText" required />
+                <br>
+                <label for="inputDate">Date</label>
+                <br>
+                <input type="date" name="date" id="inputDate" required />
+                <br>
+                <label for="inputDescription">Description</label>
+                <br>
+                <textarea name="description" id="inputDescription" cols="32" maxlength="30px" rows="10"></textarea required>
+                <br>
+                <div class="buttons"><button id="add-btn" type="submit" class="btns">Add</button>
+                <button id="cancel-btn" class="btns" type="button">Cancel</button></div>
+            </form>
+        </dialog>
+        <dialog id="secondDialogText">
+            <p>
+                Are you sure you want to delete this note?
+            </p>
+            <div class="buttoned">
+                <button class="btns" id="deleteNote">Yes</button><button class="btns" id="cancelDeleteNote">No</button>
+            </div>
+        </dialog>
+        <dialog id="thirdDialogText">
+            <p>
+                Do you want to discard changes?
+            </p>
+            <div class="buttoned">
+                <button class="btns" id="editBtn">Yes</button><button id="closeEditBtn" class="btns">No</button>
+            </div>
+        </dialog>
+    </main>
+    <footer>
+                    <p>&copy;2024 Oluwadamilare Daniel Omole</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
