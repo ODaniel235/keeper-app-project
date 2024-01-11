@@ -21,6 +21,8 @@ header{
     top: 0;
     height: fit-content;
     padding: 8px;
+    position: fixed;
+    z-index: 1;
     background-color: gold;
 }
 .btnContainer{
@@ -71,6 +73,7 @@ footer{
     align-items: center;
     position: fixed;
     width: 100%;
+    z-index: 1;
     bottom: 0;
     background-color: gold;
 }
