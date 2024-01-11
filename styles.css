@@ -124,6 +124,7 @@ svg{
     flex-direction: row;
     justify-content: space-between;
     background-color: aliceblue;
+    gap: 10px;
 }
 
 .btns{
@@ -170,7 +171,7 @@ button{
         position: relative;
     }
     #secondDialogText{
-        left: -20%;
+        left: -10%;
     }
 }
 
