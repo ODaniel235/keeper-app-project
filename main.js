@@ -132,6 +132,7 @@ modalForm.onsubmit = e =>{
     textDate.value = '';
     textDescription.value = '';
     textTitle.value = '';
+    dialogText.close();
 }
 
 cancelDeleteNoteBtn.addEventListener('click', ()=>secondDialogText.close())
