@@ -139,7 +139,8 @@ cancelDeleteNoteBtn.addEventListener('click', ()=>secondDialogText.close())
 document.addEventListener('keydown', (e)=>{
     if(e.key === 'Enter'){
         dialogText.showModal()
-    }
+    }else{
+        return null
 })
 
 if(main.innerHTML == ''){
