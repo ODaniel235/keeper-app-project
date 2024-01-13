@@ -141,8 +141,7 @@ document.addEventListener('keydown', (e)=>{
         dialogText.showModal()
     }else{
         return null
-}}
-
+}})
 if(main.innerHTML == ''){
     main.style.display == "none";
 }else{
